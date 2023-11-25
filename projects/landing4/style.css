@@ -1,0 +1,101 @@
+* {
+  font-family: "Heebo", sans-serif;
+  color: #2c2c2c;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+      width: 100vw;
+    height: 100hw;
+    overflow-x: hidden;
+}
+
+h1 {
+  color: #071192;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 300;
+}
+
+body {
+  background-image: url(img/img-bg.png);
+  background-repeat: no-repeat;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+.title {
+  background-color: rgba(204, 204, 204, 0.314);
+  max-width: 23.375rem;
+  height: 25.625rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem;
+}
+
+label,
+button {
+  display: block;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #071192;
+  width: 85%;
+  height: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #071192;
+  color: white;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contact {
+    position: static;
+    padding-top: 30%;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    max-width: 100%;
+
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+}

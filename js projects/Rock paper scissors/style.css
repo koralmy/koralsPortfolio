@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(./img/rockBackground.png) ;
+    background-size: 100%;
+    background-repeat:round; */
+
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    gap: 15%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 100px;
+
+}
+
+h1{ 
+    margin: 0;
+    font-size: 2.5vw;
+
+}
+
+.score-table{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#opponent-choice {
+    width: 25vw;
+    height: 25vh;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#opponent-score {
+    color:black;
+    background-color: hwb(54 0% 0% / 0.721);
+    width: 30vw;
+    border-radius: 20px;
+
+}
+
+#your-score {
+    color: black;
+    background-color: hwb(54 0% 0% / 0.721);
+    border-radius: 20px;
+    width: 30vw;
+
+
+}
+
+
+hr {
+  width:10%;
+  text-align:center;
+ color: hwb(54 0% 0% / 0.721);
+ 
+}
+
+#your-choice {
+    width: 25vw;
+    height: 25vh;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#choices {
+    width: 240px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#choices img {
+    width: 15vw;
+    height: 15vh;
+    cursor: pointer;
+}
+
+
+#choices img:hover {
+    width: 17vw;
+    height: 17vh;
+}
+
+
+h3 {
+    color:  hwb(54 0% 0% / 0.721);
+    font-size: 10vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titan One', sans-serif;
+}
+
+
+
+/* The modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    text-align: center;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* Modal button */
+#startButton {
+    background-color: hwb(54 0% 0% / 0.721);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+
+#startButton:hover {
+    background-color: hwb(54 1% 20% / 0.721);
+}
+
+span {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .pics {
+        flex-direction: column;
+    }
+
+
+
+    #opponent-choice,#your-choice {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    #choices img {
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    #choices img:hover {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    #opponent-score, #your-score {
+        width: 40vw; 
+    } 
+
+    h1 {
+        font-size: 3.2vw;
+    }
+
+    h3 {
+        font-size: 15vw;
+    }
+}
+
+
+

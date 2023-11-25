@@ -1,0 +1,113 @@
+@use "variables" as *;
+
+* {
+  font-family: $ff-primary;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+body {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerr {
+  background-color: $clr-box;
+  color: $clr-primary;
+  position: absolute;
+  top: 24%;
+  right: 7%;
+  width: 360px;
+  min-height: 340px;
+  padding: 50px;
+
+  p {
+    font-size: $fs-s;
+    font-weight: $fw-200;
+  }
+
+  h1 {
+    font-size: $fs-md;
+    font-weight: $fw-600;
+  }
+
+  form {
+    font-weight: $fw-600;
+    font-size: $fs-xs;
+
+    .form-control {
+      border-radius: 0;
+
+      &:focus {
+        border: 1px solid $clr-btn !important;
+        box-shadow: none !important;
+      }
+    }
+
+    button {
+      background-color: $clr-btn;
+      font-weight: $fw-800;
+      color: $clr-primary;
+      display: block;
+      border: none;
+      margin-top: 20px;
+      width: 7rem;
+      min-height: 2.125rem;
+      cursor: pointer;
+    }
+
+    input {
+      border: 1px solid $clr-btn;
+      width: 85%;
+      height: 30px;
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    background-image: url(./img/Path\ 15.png);
+  }
+
+  .containerr {
+    min-height: 370px;
+    width: 300px;
+    text-align: center;
+    padding-top: 30px;
+    padding: 8%;
+    form {
+      text-align: center;
+
+      input {
+        width: 100%;
+      }
+
+      label {
+        font-size: $fs-xxs;
+      }
+
+      button {
+        display: inline-block;
+        width: 60%;
+        font-size: $fs-xxs;
+      }
+    }
+    h1 {
+      font-size: $fs-s;
+    }
+
+    p {
+      font-size: $fs-xs;
+    }
+  }
+}

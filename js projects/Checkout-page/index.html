@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="אתר שהוא עמוד תשלום והכנסת פרטי אשראי אשר מבצע ואלידציות על פורמטים של כל הפרמטרים שהמשתמש צריך להזין">
+    <link rel="icon" type="image" href="img/favicon.jpg.png">
+
+
+    <!--GOOGLE FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Check out page</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        
+        <article class="left">
+          <h1>Let's Make Payment</h1>
+          <p>
+            To start your subscription, input your card details to make payment. You will be redirected to your banks
+            authorization page .
+          </p>
+
+          <form action="mailto:admin@example.com" method="post">
+            <label>Cardholder's Name</label>
+            <input type="text" id="name" placeholder="PAULINA CHIMAROKE" />
+
+            <label>Card number</label>
+            <input type="text" id="cardNumber" maxlength="19" placeholder="9870 3456 7890 6473" />
+
+            <div class="Exp-cvc">
+              <div class="exp">
+                <label>Expiry</label>
+                <input type="text" id="expiry" maxlength="5" placeholder="03/25" />
+              </div>
+
+              <div class="Cvc">
+                <label>CVC</label>
+                <input type="text" id="cvc" maxlength="4" placeholder="654" />
+              </div>
+            </div>
+
+            <label>Discount Code</label>
+            <div class="applly">
+              <input type="text" class="discount" for="Discount-Code" placeholder="CHIKAMSO-20-OFF" />
+
+              <button class="apply-btn">Apply</button>
+            </div>
+
+            <button id="btn" class="sucssecBtn">
+                <a href="https://koralmy.github.io/checkOut/sucssec" >
+                    Pay
+                </a> 
+              </button>
+          </form>
+        </article>
+
+        <article class="right">
+          <div class="checkout-box">
+            <div class="right-title">
+              <p class="paing">Your paing,</p>
+              <h2>$450.00</h2>
+            </div>
+
+            <div class="item-and-prices">
+              <div class="items">
+                <p>Custom Gucci Shoes</p>
+                <span>Size: m Color: Red</span>
+
+                <p>Nivea Cream 400ml</p>
+                <span>Size: m Color: Blue</span>
+
+                <p>Discounts & Offers</p>
+              </div>
+
+              <div class="prices">
+                <p class="price">$ 400.00</p>
+
+                <p class="price">$ 50.00</p>
+
+                <p class="price">$ 0.00</p>
+              </div>
+            </div>
+            <hr />
+
+            <div class="Total">
+              <div class="bottom-items">
+                <p>Tax</p>
+
+                <p>Total</p>
+              </div>
+
+              <div class="bottom-prices">
+                <p class="price">$ 0.00</p>
+
+                <p class="price">$ 450.00</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="glow"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

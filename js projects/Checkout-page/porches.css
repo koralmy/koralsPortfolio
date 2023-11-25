@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+main, section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(234, 241, 243);
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.tnx-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    gap: 30px;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+
+#orederNumber {
+    color: rgb(76, 195, 76);
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    #orederNumber {
+
+        font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 500px){
+    .tnx-box {
+        max-width: 800px;
+    }
+
+}

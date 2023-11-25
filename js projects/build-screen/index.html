@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="  פרוייקט בג'אווה סקריפט שמאפשר למשתמש לבנות אלמנטים לפי דרישתו ">
+    <link rel="icon" type="image" href="img/favicon.jpg.png">
+
+    <title>Build screen</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+    <main>
+
+        <section class="right">
+            
+
+            <div class="title">
+            <h1>בונה מסך</h1>
+            <p class="titel2">ברוכים הבאים לבונה מסכים! <br /><br />
+                בואו נתחיל לבנות את האלמנטים שלכם.
+            </p>
+            </div>
+                
+
+            <label>
+            סוג האלמנט
+            </label>
+            <select name="elem-type" id="elem-type">
+                <option value="div">div</option>
+                <option value="p">p</option>
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="h4">h4</option>
+                <option value="h5">h5</option>
+                <option value="h6">h6</option>
+                <option value="span">span</option>
+                <option value="ul">ul</option>
+                <option value="ui">ui</option>
+
+
+            </select>
+            
+
+            
+            <label>
+            צבע רקע:
+            </label>
+            <input type="color" id="elem-color">
+
+            <label>
+            רוחב:
+            </label>
+            <input type="number" id="elem-width" >
+
+            <label>
+            גובה:
+            </label>
+            <input type="text" id="elem-heigh">
+
+
+            <label>
+            תוכן:
+            </label>
+            <textarea id="elem-text" cols="10" rows="10"></textarea>
+
+            <label>
+            צבע גופן:
+            </label>
+            <input type="color" value="#9b9b9b" id="font-color">
+
+
+            <label>
+            גודל גופן:
+            </label>
+            <input type="number" id="font-size-num">
+
+
+            <label>
+            בחר צבע צל:
+            </label>
+            <input type="color" id="shadow-color">
+
+            <label>
+            מיקום X של הצל:
+            </label>
+            <input type="number" id="shadow-x">
+
+            <label>
+            מיקום Y של הצל:
+            </label>
+            <input type="number" id="shadow-y">
+
+            <label>
+            טשטוש:
+            </label>
+            <input type="number" id="shadow-blur" min="5"
+            placeholder="Minimum 5"
+            > 
+
+
+            <label>
+            עיגול פינות:
+            </label>
+            <input type="text" id="border-radius"  placeholder="Maximum 80" maxlength="2">
+
+            <label>
+            סוג מסגרת:
+            </label>
+            <select name="border-type" id="border-type">
+            <option value="none">ללא</option>
+            <option value="solid">ישרה</option>
+            <option value="dotted">נקודות</option>
+            <option value="dashed">מקווקו</option>
+            <option value="double">ישרה כפולה</option>
+            </select>
+
+            <label>
+            צבע מסגרת:
+            </label>
+            <input type="color" id="border-color">
+
+            <label>
+            עובי מסגרת:
+            </label>
+            <input type="number" id="border-size" maxlength="2" placeholder="Maximum 50">
+
+
+            
+            <div class= "btns">
+                <button class="btn" id="add" title="כפתור זה מוסיף אלמנט למסך" onclick="addElem()" >הוסף</button>
+
+                <button class="btn" id="save" onclick="saveElem()"  title="/ישמור זה ישמור את האלמנטים גם כשתצא/י ותכנס שוב לאתר" >שמור</button>
+
+                <button class="btn" id="clear" onclick="clearElem()"  title="כפתור זה מנקה את כל האלמנטים מהמסך" >נקה</button>
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+        <section class="left">
+
+       
+            <div class="container">
+
+            </div>
+        
+
+        </section>
+
+
+
+
+    </main>
+
+    <script src="script2.js"></script>
+    
+</body>
+</html>

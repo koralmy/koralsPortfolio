@@ -1,0 +1,191 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+  color: #020253;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.sign {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  direction: column;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h1,
+form,
+button {
+  font-weight: 1000;
+}
+
+p {
+  font-size: 1rem;
+}
+
+form {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign {
+  width: 50vw;
+  height: 100vh;
+}
+
+
+.tomer {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  background-color: #f50b33;
+  color: white;
+  width: 10.375rem;
+  min-height: 3.125rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  border: none;
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 3px solid #f50b33;
+  background-color: #f6f6f6;
+  width: 18.75rem;
+  min-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+span {
+  color: #f50b33;
+}
+
+.foto {
+  width: 50vw;
+  height: 100vh;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* media Quires */
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  body {
+    overflow: unset;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  img {
+    width: 100vw;
+    height: 50v;
+  }
+
+  h1{
+    font-size: 6vw;
+  }
+
+  .tomer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+  }
+
+
+
+  .photo {
+    height: 50vh;
+  }
+
+  .foto {
+    height: 100vh;
+    width: 100vw;
+  }
+
+ .sign {
+    width: 100vw;
+    height: 50vh;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

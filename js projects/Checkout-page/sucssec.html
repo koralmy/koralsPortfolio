@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+        <!--GOOGLE FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+     <meta name="description" content="אישור תשלום">
+    <link rel="icon" type="image" href="img/favicon.jpg.png">
+
+    
+
+    <link rel="stylesheet" href="porches.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="tnx-box">
+
+                <h2>your paymant has been received.</h2>
+
+                <p>Your order number is: </p>
+                <p id ="orederNumber"> </p>
+
+                <p>Thak you for your purchase! ♥</p>
+
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        
+        // Function to generate random number
+        function randomNumber(min, max) {
+            const orederNumberRendom = Math.floor(Math.random() * (max - min) + min);
+            document.getElementById("orederNumber").innerHTML = (orederNumberRendom)
+        }
+    
+
+        // Function call
+        console.log( randomNumber(5143326, 5999999) );
+
+    </script>
+</body>
+</html>
