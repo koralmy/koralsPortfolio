@@ -396,6 +396,10 @@ textarea {
   height: 11rem;
 }
 
+.numColor {
+  color: white;
+}
+
 
 
 @media (min-width: 320px) and (max-width: 630px) {
