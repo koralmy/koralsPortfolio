@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100% !important;
+  a[href^=tel] { color: inherit; text-decoration: none; }
 }
 
 
@@ -396,9 +397,7 @@ textarea {
   height: 11rem;
 }
 
-.numColor {
-  color: white;
-}
+
 
 
 
